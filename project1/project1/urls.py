@@ -3,7 +3,7 @@ from django.urls import path,include
 from rest_framework.routers import DefaultRouter
 from post_app.views import PostViewSet
 
-router = DefaultRouter
+router = DefaultRouter()
 router.register('post', PostViewSet, basename='post')
 
 urlpatterns = [
